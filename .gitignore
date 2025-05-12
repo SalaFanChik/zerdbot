@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtualenv
+venv/
+env/
+ENV/
+
+# Environment variables
+*.env
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.egg
+*.egg-info/
+
+# Docker
+*.pid
+*.db
+docker-compose.override.yml
