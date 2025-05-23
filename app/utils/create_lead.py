@@ -1,10 +1,20 @@
 import aiohttp
+<<<<<<< HEAD
 from app.core.settings import get_settings
 
 config = get_settings() 
 
 ACCESS_TOKEN = config.access_token
 BASE_DOMAIN = config.base_domain
+=======
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+BASE_DOMAIN = os.getenv("BASE_DOMAIN")
+>>>>>>> 2da573ae627d77ddfe229701a6c29b550cb440ed
 if not ACCESS_TOKEN or not BASE_DOMAIN:
     raise ValueError("ACCESS_TOKEN and BASE_DOMAIN must be set in the environment variables.")
 
